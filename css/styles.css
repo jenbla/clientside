@@ -1,0 +1,975 @@
+@font-face {
+	src:url(../include/eurof55.ttf);
+	font-family: Eurofurence;
+}
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-family: Eurofurence, Arial, Verdana, sans-serif;
+	/*background-image: url(../img/grid.png);*/
+	background-color: #0A212B;
+}
+
+#wrapper {
+	width: 960px;
+	min-height: 1600px;
+	margin: 0 auto;
+	padding: 0;
+}
+/*nav starts here*/
+#logo {
+	float: left;
+
+}
+#nav {
+	height: 70px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#nav ul {
+	width: 960px;
+	padding-left: 0;
+	line-height: 70px;
+	margin: 0 auto;
+}
+
+
+#nav ul li:first-child {
+	margin-left:30px;
+}
+
+#nav ul li:last-child {
+	margin-right: 0px;
+	background-color: rgb(149,208,171);
+	margin-left: 6px;
+}
+#nav ul a,
+#nav ul li {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	padding: 0;
+	line-height: 70px; 
+	margin-right: 8px; 
+	margin-left: 8px;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+
+#nav a:hover {
+	color: #46948C;
+}
+
+#current-page  {
+	background-color: #FFFFFF;
+}
+
+#nav #current-page a {
+
+	color: #46948C;
+}
+/*nav ends here*/
+/*savoy logo on slider and pages starts here*/
+.savoy-logo {
+	position: absolute;
+	top: 555px;
+	margin-left: 480px;
+	z-index: 2;
+}
+
+.savoy-logo img {
+	margin-left: -55%;
+	margin-top: -50%;
+}
+
+#savoy-logo {
+
+	position: absolute;
+	top: 337px;
+	margin-left: 240px;
+	z-index: 2;
+}
+/*savoy logo ends here*/
+/*slider and non js styles for slider here*/
+#slider {
+	z-index: -1;
+	margin-top: 0;
+	padding: 0;
+	width: 960px;
+	min-height: 820px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.gallery-item {
+	width: 960px;
+	height: 880px;
+	float: left;
+	margin: 12px;
+}
+
+.gallery-item img {
+	max-width: 100%;
+	border: none;
+}
+
+#gallery {
+	width: 960px;
+
+}
+
+#image-slider {
+	width: 960px;
+	height: 880px;
+	overflow: hidden;
+	position: relative;
+}
+
+#image-slider .gallery-item {
+	width: 960px;
+	margin: 0;
+	float: none;
+	position: absolute;
+}
+/*end slider and non-js gallery*/
+
+/*quick-booking-form starts here*/
+
+#quick-form {
+	width: 853px;
+	height: 270px;
+	position: absolute;
+	top: 85px;
+	margin-left: 90px;
+	color: #000;
+	display: block;
+	font-weight: 600;
+}
+
+#quick-form-body {
+	/*background-color: rgb(4, 4, 25);
+	background-color: rgba(4, 4, 25, 0.7);*/
+	background-color: rgb(149,208,171);
+	background-color: rgba(149,208,171,0.7);
+	width: 854px;
+	height: 270px;
+	padding: 8px 8px 8px 8px;
+	margin-right: 16px;
+}
+
+#quick-form label {
+	text-transform: uppercase;
+}
+#quick-form-body .first-contact,
+#quick-form-body .travel-dates {
+	height: 250px;
+	display: block;
+}
+
+#quick-form-body .first-contact {
+	width: 350px;
+	float: left;
+}
+
+#quick-form-body .travel-dates div {
+
+	display: inline-block;
+}
+
+#quick-form-body .first-contact div,
+#quick-form-body .travel-dates div,
+#first-name,
+#last-name  {
+	padding: 8px 8px 8px 0px;
+}
+
+
+#quick-form-body .travel-dates {
+	float: right;
+	width: 490px;
+
+}
+#quick-form-body .first-contact label {
+	width: 95px;
+	float: left;
+	text-align: left;
+	padding-right: 15px;
+}
+#quick-form-body .first-contact input {
+	width: 150px;
+	float: left;
+}
+#quick-form-body h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+/*errors for qf and main booking here*/
+
+#quick-form span,
+#res-text span {
+	font-family: Eurofurence, Arial, Verdana, sans-serif;
+	font-size: smaller;
+	padding-left: 3px;
+
+}
+#quick-form span {
+	color: #990000;
+}
+#res-text span {
+	color: #990000;
+	font-weight: bold;
+}
+#arriveDate-error,
+#departDate-error,
+#con-guest-arrive-calendar-error,
+#con-guest-depart-calendar-error,
+#guest-travel-dates-error
+ {
+	clear:both;
+	display: block;
+}
+
+#no-attendees-error {
+	float: right;
+	margin-top: 10px;
+}
+
+/*errors end*/
+
+/*position radios, labels and specific form items*/
+
+input[type=radio] + label {
+    display:inline-block;
+    margin-left: 10px;
+  	margin-right: 20px;
+}
+
+#calendars label[for=depart-calendar],
+#calendars label[for=arrive-calendar] {
+	width: 40px;
+	float: left;
+	text-align: left;
+	margin-right: 50px;
+}
+
+#calendars label[for=depart-calendar] {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+#first-name,
+#last-name,
+#eAddress {
+	width: 100%;
+	display: block;
+}
+#first-name label[for=fname],
+#last-name label[for=lname],
+#eAddress label [for=emailAddress] {
+	width: 90px;
+	text-align: left;
+	float: left;
+	margin-left: 0;
+}
+.travel-dates #eAddress label[for=emailAddress] {
+	margin-right: 13px;
+}
+
+#first-name input {
+	padding-right: 0;
+}
+
+
+#calendars {
+	height: 40px;
+}
+
+#depart-calendar,
+#arrive-calendar {
+	width: 120px;
+	float: right;
+}
+
+#submit {
+	float: right;
+	position: relative;
+	clear: both;
+	margin-right: 35px;
+	width: 120px;
+	height: 28px;
+	margin-top: -50px;
+}
+#submit input {
+	font-weight: bolder;
+	font-size: larger;
+	background-color: #95d0ab;
+	border-radius: 5px;
+	height: 30px;
+}
+
+input, select {
+	font-family: Eurofurence, Arial, Verdana, sans-serif;
+}
+/*end specific form items*/
+
+/*call to action here*/
+#trailer {
+	width: 40px;
+	background-color: #95d0ab;
+	height: 30px;
+	float: right;
+	position: relative;
+	margin-top: -7px;
+	right:82px;
+	overflow: hidden;
+}
+/*call to action ends*/
+/*index page*/
+#welcome {
+	width: 500px;
+	min-height: 130px;
+	position: absolute;
+	top: 600px;
+	margin-left: 135px;
+	background-color: rgb(149,208,171);
+	background-color: rgba(149,208,171,0.7);
+	padding: 10px;
+	display: block;
+	z-index: 2;
+}
+#welcome p {
+	font-family: Garamond, Georgia, serif;
+	font-size: larger;
+	text-align: justify;
+	font-weight: 400;
+}
+#welcome h1,
+#welcome p {
+	color: #000;
+}
+h1 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-family: Eurofurence, Arial, Verdana, sans-serif;
+}
+
+img {
+	border: none;
+}
+#charlotte-image {
+	margin-top: 45px;
+	float: left;
+	width: 175px;
+}
+#penthouse-image,
+#conference-image {
+	clear: both;
+	float: left;
+	width: 175px;
+	margin-top: 40px;
+}
+#penthouse-image {
+	margin-top: 50px;
+}
+.radius-corner {
+	border-radius: 5px;
+	-moz-border-radius:  5px;
+	-webkit-border-radius:  5px;
+	-o-border-radius:  5px;
+	-ms-border-radius:  5px;
+}
+#bottom-container {
+
+	width: 880px;
+	margin: 0 auto;
+	height: 680px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+#dining, #accommodation,  #facilities {
+	width: 490px;
+	color: #FFF;
+	font-family: Garamond, Georgia, serif;
+	font-size: larger;
+	text-align: justify;
+}
+
+#dining, #facilities, #accommodation {
+
+	float: right;
+}
+#dining {
+	margin-top: 28px;
+}
+
+#dining h2,
+#accommodation h2,
+#facilities h2,
+.room-text h2 {
+	font-family: Eurofurence, Arial, Verdana, sans-serif;
+	text-transform: uppercase;
+}
+
+.content h3 {
+	font-family: Eurofurence, Arial, Verdana, sans-serif;
+	text-transform: uppercase;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
+#bottom-container a {
+	color: #95D0AB;
+	text-decoration: none;
+	font-weight: bolder;
+}
+/* index ends*/
+/*footer begins*/
+.footer  {
+	list-style: none;
+	padding-left: 0;
+	margin: 0 auto;
+	float: left;
+	clear: both;
+}
+
+.footer li {
+	display: inline-block;
+	text-align: center;
+	border-right: 1px solid #FFF;
+	padding-right: 11px;
+	padding-left: 11px;
+}
+.footer li:first-child {
+	padding-left: 0;
+}
+.footer li li:first-child {
+	padding-left: 11px;
+	margin-top: 10px;
+}
+.footer ul li +li + li + li + li + li + li + li + li + li {
+	border-right: none;
+	padding-right: 0;
+}
+
+.footer ul ul {
+	padding-left: 0;
+}
+.footer ul ul li{
+	float: left;
+	clear: both;
+	line-height: 100%;
+	border-right: none;
+}
+.no-border {
+	border-right: none;
+}
+.footer a {
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+.footer ul ul a {
+
+	text-transform: none;
+}
+.footer a:hover {
+	border-bottom: 1px dotted #95D0AB;
+}
+
+.footer p {
+	text-transform: none;
+	text-align: center;
+	color: #FFF;
+}
+
+.bullet-twitter {
+	display: inline-block;
+	margin-right: 10px;
+}
+.bullet-facebook {
+	display: inline-block;
+	margin-right: 10px;
+}
+/*footer ends*/
+/*dining and other similar pages*/
+.header-image {
+	width: 960px;
+	height: 665px;
+	margin: 0 auto;
+	z-index: -1;
+}
+.content {
+	font-family: Garamond, Georgia, sans-serif;
+	font-size: larger;
+	width: 420px;
+	min-height: 1100px;
+	padding: 10px 10px;
+	float: left;
+	color: #FFF;
+	text-align: justify;
+	line-height: 1.4em;
+}
+
+.content h2 {
+	font-family: Eurofurence, Arial, Verdana, sans-serif;
+	text-transform: uppercase;
+	padding-top: 30px;
+}
+.content h2:first-child {
+	padding-top: 10px;
+}
+
+.content ul {
+	font-family: Garamond, Georgia, sans-serif;
+}
+.main-heading {
+	width: 960px;
+	float: left;
+	height: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h1 {
+	font-family: Eurofurence, Arial, Verdana, sans-serif;
+	color: #FFF;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+
+#dining-images,
+#facilities-images {
+	width: 500px;
+	float: right;
+	padding-top: 110px;
+}
+
+#dining-images div  {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	float: right;
+}
+/*dining ends*/
+/*facilities begins*/
+
+#facilities-images div {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	float: right;
+}
+
+#concierge-parking {
+	clear: both;
+}
+
+#concierge-parking #concierge {
+
+	float: left;
+	margin-bottom: 40px;
+}
+
+#concierge-parking #parking {
+
+	float: right;
+	margin-bottom: 40px;
+}
+.wrapper-bottom {
+	width: 960px;
+	margin: 0 auto;
+}
+/*facilities ends*/
+/*rooms pages begin */
+
+#rooms, #room-images {
+	width: 500px;
+	margin: 0 auto;
+	clear: left;
+	color: #FFFFFF;
+	font-family: Garamond, Georgia, serif;
+	font-size: larger;
+	line-height: 1.3em;
+	text-align: justify;
+}
+
+#rooms a {
+	padding-right: 20px;
+	border-right: 1px solid #95D0AB;
+	padding-left: 20px;
+}
+#rooms a,
+.room-text a,
+.room-image a {
+	color: #95D0AB;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Garamond, Georgia, Serif;
+}
+
+.room-image a {
+	padding-right: 20px;
+	border-right: 1px solid #95D0AB;
+	padding-left: 10px;
+}
+
+.room-image a:first-child {
+
+	padding-left: 0;
+}
+.room-image a:last-child {
+
+	border-right: none;
+}
+#rooms .no-padding,
+.room-image .no-padding{
+	padding-left: 0; 
+}
+#rooms h1,
+.room-text h1 {
+	line-height: 1.3em;
+	padding: 20px 0;
+}
+#rooms .no-pipe {
+	border-right: none;
+}
+
+#rooms h2, #room-images h2 {
+	font-family: Eurofurence, Arial, Verdana, sans-serif;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding-top: 20px;
+}
+#room-images h2 {
+	text-align: center;
+}
+
+.room-image {
+	width: 500px;
+	min-height: 300px;
+	float: right;
+	margin-top: 100px;
+	font-family: Garamond, Georgia, Serif;
+	font-size: larger;
+	color: #95D0AB;
+	margin-bottom: 25px;
+}
+.room-image a {
+	padding-right: 20px;
+	border-right: 1px solid #95D0AB;
+	padding-left: 10px;
+}
+
+.room-text{
+	width: 390px;
+	min-height: 300px;
+	float: left;
+	margin-top: 10px;
+	margin-right: 40px;
+	font-size: larger;
+	line-height: 1.3em;
+	color: #FFF;
+	text-align: justify;
+	font-family: Garamond, Georgia, serif;
+}
+#bathroom-image {
+	margin-top: 20px;
+}
+
+#penthouse {
+	margin-top: 150px;
+}
+/*rooms pages end*/
+/*alternative layout pages gallery, contact, sitemap and success begin*/
+#gallery-main-image,
+#contact-main-image,
+#sitemap-main-image,
+#success-main-image {
+	width: 960px;
+	min-height: 660px;
+	margin: 0 auto;
+	float: left;
+}
+
+#gallery-main-image h1 {
+	margin: 30px 0;
+	text-align: center;
+}
+#gallery-qf-top,
+#contact-qf-top {
+	width: 960px;
+	height: 301px;
+	margin: 0 auto;
+	background-color: rgb(70,148,140);
+}
+
+#gallery-logo,
+#contact-logo {
+	position: absolute;
+	top: 655px;
+	margin-left: 330px;
+	z-index: 2;
+}
+#gallery-large {
+	width: 960px;
+	margin: 0 auto;
+}
+#gallery-landscape {
+	margin: 0 auto;
+	width: 960px;
+	min-height: 800px;
+	float: left;
+	clear: both;
+	margin-top: 40px;
+}
+
+.gallery-col1,
+.gallery-col2,
+.gallery-col3 {
+	width: 255px;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.gallery-col1,
+.gallery-col2 {
+	margin-right: 96px;
+}
+.gallery-col3{
+	width: 255px;
+	float: left;
+	margin-right: 0;
+}
+
+#contact-img {
+	width: 960px;
+	height: 660px;
+	margin-left: 145px;
+}
+#contact-main-image {
+	width: 960px;
+	min-height: 800px;
+	margin-top: 35px;
+}
+
+#earth-img {
+	width: 660px;
+	height: 644px;
+	margin: 0 auto;
+}
+/*commence inclusion of reservation page*/
+#contact-text-intro,
+#res-text {
+	width: 960px;
+	min-height: 800px;
+	font-family: Garamond, Georgia, Serif;
+	color: #FFFFFF;
+	margin-top: 40px;
+}
+
+#reservation-holder {
+	width: 960px;
+}
+
+#conference {
+	clear: both;
+	width: 960px;
+	min-height: 800px;
+}
+.centre {
+	text-align: center;
+}
+#contact-text-to-europe,
+#contact-text-to-sa {
+
+	width: 460px;
+	float: left;
+	min-height: 600px;
+	margin-bottom: 15px;
+	font-weight: 400;
+}
+#conference #conference-requests {
+	padding-top: 0;
+	margin-bottom: 10px;
+}
+#res-text-left,
+#res-text-right,
+#conference-text1,
+#conference-text2 {
+	height: 800px;
+	padding-left: 20px;
+	width: 459px;
+	border-bottom: 2px solid #040149;
+	float: left;
+	background-color: #46948C;
+}
+
+#res-text-left,
+#conference-text1 {
+	border-right: 1px dashed #040149;	
+}
+
+#res-text-left h2,
+#res-text-right h2,
+#contact-text-to-europe h2,
+#contact-text-to-sa h2,
+#conference-text1 h2,
+#conference h2 {
+	font-family: Eurofurence, Arial, Verdana, sans-serif;
+	text-transform: uppercase;
+}
+#res-text-left label,
+#res-text-right label,
+#conference-text1 label,
+#conference-text2 label {
+	width: 140px;
+	float: left;
+	text-align: left;
+	padding-right: 15px;
+}
+#conference-text2 label {
+	width: 200px;
+}
+#guest-travel-dates {
+	display: inline-block;
+}
+#guest-travel-dates input[type=radio] + label{
+	width: 50px;
+	display:inline-block;
+	margin-left: 0;
+}
+#guest-travel-dates p{
+	margin-top: 0;
+	margin-bottom: 3px;
+}
+#fixed,
+#flexible {
+	width: 200px;
+	float: left;
+	margin-bottom: 8px;
+}
+
+#res-text-left div,
+#res-text-right div,
+#conference-text1 div {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+#conference-text2 div {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#guest-calendars label[for=guest-depart-calendar],
+#guest-calendars label[for=guest-arrive-calendar] {
+	width: 90px;
+	float: left;
+	text-align: left;
+	margin-right: 10px;
+}
+
+#guest-paddress2 label span,
+#conference-text1 label span {
+	font-size: 10px;
+}
+#requirements {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#conference-text2 span,
+#conference-text1 span, 
+#reservation-holder span {
+	clear: both;	
+	float: left;
+}
+#preferences input,
+#requirements input {
+     float: right;
+     margin-right: 120px;
+}
+#guest-submit,
+#con-guest-submit {
+	float: left;
+	clear: both;
+	margin-top: 160px;
+}
+#con-guest-submit {
+	margin-top: 60px;
+}
+#guest-submit input,
+#con-guest-submit input {
+	font-weight: bolder;
+	font-size: larger;
+	background-color: #95d0ab;
+	border-radius: 5px;
+	height: 30px;
+}
+#con-guest-destination {
+	margin-top: 40px;
+}
+
+#con-guest-destination label {
+	margin-right: 27px;
+	padding-right: 0;
+}
+
+
+#accom label {
+	margin-right: 30px;
+}
+#reservation-logo {
+	position: absolute;
+	top: 430px;
+	margin-left: 330px;
+	z-index: 2;
+	margin-bottom: 35px;
+}
+
+#sitemap{
+	width: 960px;
+	padding-left: 40px;
+}
+#success {
+	width: 500px;
+	margin: 0 auto;
+	text-align: justify;
+}
+#success h1 {
+	padding-left: 0;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+#sitemap-wrapper {
+	width: 960px;
+	min-height: 1100px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#sitemap ul,
+#sitemap a,
+#success p {
+	list-style-type: none;
+	text-decoration: none;
+	color: #FFF;
+	font-family: Garamond, Georgia, Serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+}
+
+#sitemap ul
+#sitemap ul ul {
+	font-size: smaller;
+}

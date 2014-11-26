@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="description" content="The Savoy Hotel Group Online Reservation page" />
+     <meta name="keywords" content="Make a reservation, book accommodation, book Conference Centre" />
+    <meta name="author" content="JSB Designs for The Savoy Hotel Group 2014" />
+
+  <title>The Savoy - Online Reservation</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.min.css" />
+      <!--[if IE 8]>
+      <link rel="stylesheet" type="text/css" href="css/ie8.min.css" />
+    <![endif]-->
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="nav">
+      <div id="logo">
+        <a href="index.html"><img src="img/inverted-logo.png" alt="logo" title="logo"
+        width="140" height="65" /></a>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="dining.html">Dining</a></li>
+
+        <li><a href="rooms.html">Rooms</a></li>
+
+        <li><a href="facilities.html">Facilities</a></li>
+
+        <li><a href="gallery.html">Gallery</a></li>
+
+        <li><a href="contact_us.html">Contact</a></li>
+
+        <li id="current-page"><a href="online_reservation.html">Reservations</a></li>
+      </ul>
+    </div><!--nav div ends here-->
+
+    <div id="reservation-img">
+      <img src="img/savoy-exterior3-main.jpg" alt="Savoy Exterior Image Reservation page"
+      title="Savoy Exterior Image Reservation page" />
+
+      <div id="reservation-logo"><img src="img/savoy-logo.png" alt="savoy logo" /></div>
+
+      <div id="res-text">
+        <h1>The Savoy - Online Reservation</h1>
+
+        <p>Please complete your booking. Fields specified '*' are required for us to process your booking.</p>
+
+        <div id="reservation-holder">
+          <form action="success.html" method="post">
+            <div id="res-text-left">
+              <h2>Guest Name</h2>
+
+              <div id="title">
+                <label for="guest-title">*Title:</label> <select name="guest-title" id=
+                "guest-title" size="1">
+                  <option value="0">
+                    Please select
+                  </option>
+
+                  <option value="Mr">
+                    Mr
+                  </option>
+
+                  <option value="Mrs">
+                    Mrs
+                  </option>
+
+                  <option value="Miss">
+                    Miss
+                  </option>
+
+                  <option value="Ms">
+                    Ms
+                  </option>
+
+                  <option value="Dr">
+                    Dr
+                  </option>
+
+                  <option value="Other">
+                    Other
+                  </option>
+                </select> <span id="guest-title-error"></span>
+              </div><!-- div for title ends here -->
+
+              <div id="guest-fname">
+                <label for="guest-first-name">*First Name:</label><input type="text" name=
+                "guest-first-name" size="22" id="guest-first-name" /> <span id=
+                "guest-fname-error"></span>
+              </div><!-- div for guest-fname ends here-->
+
+              <div id="guest-lname">
+                <label for="guest-last-name">*Last Name:</label><input type="text" name=
+                "guest-last-name" size="22" id="guest-last-name" /> <span id=
+                "guest-lname-error"></span>
+              </div><!-- div for guest-lname ends here -->
+
+              <h2>Contact Information</h2>
+
+              <div id="guest-phone">
+                <label for="guest-telephone">Phone:</label><input type="text" name=
+                "guest-telephone" size="22" id="guest-telephone" /> <span id=
+                "guest-phone-error"></span>
+              </div><!-- div for guest-phone ends here-->
+
+              <div id="guest-e-address">
+                <label for="guest-email-address">*Email:</label> <input type="text" name=
+                "guest-email-address" size="27" id="guest-email-address" /> <span id=
+                "guest-e-address-error"></span>
+              </div><!--div for guest-e-address ends here -->
+
+              <div id="guest-address-type">
+                <label for="guest-add-type">Address Type:</label> <select name=
+                "guest-add-type" id="guest-add-type" size="1">
+                  <option value="0">
+                    Select address type
+                  </option>
+
+                  <option value="Business">
+                    Business
+                  </option>
+
+                  <option value="Home">
+                    Home
+                  </option>
+
+                  <option value="Other">
+                    Other
+                  </option>
+                </select> <span id="guest-address-type-error"></span>
+              </div><!-- div for guest-address-type ends here -->
+
+              <div id="guest-paddress">
+                <label for="guest-phys-address">Address:</label> <input type="text" name=
+                "guest-phys-address" size="22" id="guest-phys-address" /> <span id=
+                "guest-paddress-error"></span>
+              </div><!-- div for guest-paddress ends here -->
+
+              <div id="guest-paddress2">
+                <label for="guest-phys-address2">Address 2:</label>
+                <input type="text" name="guest-phys-address2" size="22" id=
+                "guest-phys-address2" /> <span id="guest-paddress2-error"></span>
+              </div><!-- div for guest-paddress ends here -->
+
+              <div id="guest-city">
+                <label for="guest-from-city">City:</label> <input type="text" name=
+                "guest-from-city" size="22" id="guest-from-city" /> <span id=
+                "guest-city-error"></span>
+              </div><!--div for guest-city ends here-->
+
+              <div id="guest-country">
+                <label for="guest-from-country">Country:</label> <input type="text" name=
+                "guest-from-country" size="22" id="guest-from-country" /> <span id=
+                "guest-country-error"></span>
+              </div><!--div for guest-country ends here-->
+
+              <div id="guest-postcode">
+                <label for="guest-postcode-no">Postcode:</label> <input type="text" name=
+                "guest-postcode-no" size="22" id="guest-postcode-no" /> <span id=
+                "guest-postcode-error"></span>
+              </div><!--div for guest-postcode ends here-->
+
+              <div id="guest-submit">
+                <input type="submit" value="BOOK NOW!" id="submit-button" />
+              </div><!--ends the guest-submit div-->
+            </div>
+
+            <div id="res-text-right">
+              <h2>Reservation</h2>
+
+              <div id="guest-destination">
+                <label for="guest-destination-to">*Destination:</label> <select name=
+                "guest-destination-to" id="guest-destination-to" size="1">
+                  <option value="0">
+                    Choose location
+                  </option>
+
+                  <optgroup label="ASIA PACIFIC">
+                    <option value="HongKong">
+                      Hong Kong
+                    </option>
+
+                    <option value="Japan">
+                      Japan
+                    </option>
+
+                    <option value="Singapore">
+                      Singapore
+                    </option>
+
+                    <option value="Thailand">
+                      Thailand
+                    </option>
+
+                    <option value="Beijing">
+                      Beijing
+                    </option>
+                  </optgroup>
+
+                  <optgroup label="EUROPE">
+                    <option value="France">
+                      France
+                    </option>
+
+                    <option value="UnitedKingdom">
+                      United Kingdom
+                    </option>
+
+                    <option value="Austria">
+                      Austria
+                    </option>
+
+                    <option value="Barcelona">
+                      Barcelona
+                    </option>
+
+                    <option value="Belgium">
+                      Belgium
+                    </option>
+
+                    <option value="Denmark">
+                      Denmark
+                    </option>
+
+                    <option value="Finland">
+                      Finland
+                    </option>
+
+                    <option value="Germany">
+                      Germany
+                    </option>
+
+                    <option value="Ireland">
+                      Ireland
+                    </option>
+
+                    <option value="Italy">
+                      Italy
+                    </option>
+
+                    <option value="Madrid">
+                      Madrid
+                    </option>
+
+                    <option value="Netherlands">
+                      Netherlands
+                    </option>
+
+                    <option value="Norway">
+                      Norway
+                    </option>
+
+                    <option value="Portugal">
+                      Portugal
+                    </option>
+
+                    <option value="Sweden">
+                      Sweden
+                    </option>
+
+                    <option value="Switzerland">
+                      Switzerland
+                    </option>
+                  </optgroup>
+
+                  <optgroup label="OCEANIA">
+                    <option value="Australia">
+                      Australia
+                    </option>
+
+                    <option value="NewZealand">
+                      New Zealand
+                    </option>
+                  </optgroup>
+
+                  <optgroup label="NORTH AMERICA">
+                    <option value="Canada">
+                      Canada
+                    </option>
+
+                    <option value="PuertoRico">
+                      Puerto Rico
+                    </option>
+
+                    <option value="USA">
+                      USA
+                    </option>
+
+                    <option value="USVirginIslands">
+                      US Virgin Islands
+                    </option>
+                  </optgroup>
+
+                  <optgroup label="SOUTH AMERICA">
+                    <option value="Brazil">
+                      Brazil
+                    </option>
+
+                    <option value="Chile">
+                      Chile
+                    </option>
+
+                    <option value="Colombia">
+                      Colombia
+                    </option>
+
+                    <option value="Mexico">
+                      Mexico
+                    </option>
+
+                    <option value="Venezuela">
+                      Venezuela
+                    </option>
+                  </optgroup>
+                </select> <span id="guest-destination-error"></span>
+              </div><!--guest-destination div ends here-->
+
+              <div id="guest-travel-dates">
+                <p>*Travel dates are:</p>
+
+                <div id="fixed">
+                  <input type="radio" name="guest-travel-dates" value="fixed" id=
+                  "guest-travel-dates_fixed" /> <label for=
+                  "guest-travel-dates_fixed">Fixed</label>
+                  <span id="guest-travel-dates-error"></span>
+                </div>
+
+                <div id="flexible">
+                  <input type="radio" name="guest-travel-dates" value="flexible" id=
+                  "guest-travel-dates-flexible" /> <label for=
+                  "guest-travel-dates-flexible">Flexible</label>
+                </div>
+              </div><!-- div for travel dates ends here-->
+
+              <div id="guest-calendars">
+                <div id="guest-arrive-calendar">
+                  <label for="guest-arrive">*Arrive:</label><input type="text" name="guest-arrive"
+                  size="22" id="guest-arrive" /> <span id=
+                  "guest-arrive-calendar-error"></span>
+                </div><!--calendar arrive div ends-->
+
+                <div id="guest-depart-calendar">
+                  <label for="guest-depart">*Depart:</label><input type="text" name="guest-depart"
+                  size="22" id="guest-depart" /> <span id=
+                  "guest-depart-calendar-error"></span>
+                </div><!--guest-depart calendar div ends-->
+              </div><!--calendars div ends here-->
+
+              <div id="guest-room">
+                <label for="guest-rooms">*Rooms:</label> <select name="guest-rooms" id=
+                "guest-rooms" size="1">
+                  <option value="0">
+                    Select No. of Rooms
+                  </option>
+
+                  <option value="1">
+                    1
+                  </option>
+
+                  <option value="2">
+                    2
+                  </option>
+
+                  <option value="3">
+                    3
+                  </option>
+
+                  <option value="4">
+                    4
+                  </option>
+
+                  <option value="other">
+                    Other
+                  </option>
+                </select> <span id="guest-room-error"></span>
+              </div><!--div for rooms ends here -->
+
+              <div>
+                <label for="guest-adult">*Adults:</label> <select name="guest-adult" id=
+                "guest-adult" size="1">
+                  <option value="0">
+                    Select Adults
+                  </option>
+
+                  <option value="1">
+                    1
+                  </option>
+
+                  <option value="2">
+                    2
+                  </option>
+
+                  <option value="3">
+                    3
+                  </option>
+
+                  <option value="4">
+                    4
+                  </option>
+
+                  <option value="other">
+                    Other
+                  </option>
+                </select> <span id="guest-adult-error"></span>
+              </div><!-- div for guest-adult ends here -->
+
+              <div>
+                <label for="guest-children">*Children:</label> <select name=
+                "guest-children" id="guest-children" size="1">
+                  <option value="0">
+                   Select Children
+                  </option>
+
+                  <option value="1">
+                    1
+                  </option>
+
+                  <option value="2">
+                    2
+                  </option>
+
+                  <option value="3">
+                    3
+                  </option>
+
+                  <option value="4">
+                    4
+                  </option>
+
+                  <option value="other">
+                    Other
+                  </option>
+                </select> <span id="guest-children-error"></span>
+              </div><!-- div for guest-children ends here-->
+
+              <div>
+                <label for="guest-room-type">*Room Type:</label> <select name=
+                "guest-room-type" id="guest-room-type" size="1">
+                  <option value="0">
+                     Select room type
+                  </option>
+
+                  <option value="Standard">
+                    Standard
+                  </option>
+
+                  <option value="Superior">
+                    Superior
+                  </option>
+
+                  <option value="Penthouse">
+                    Penthouse
+                  </option>
+                </select> <span id="guest-room-type-error"></span>
+              </div><!-- div for guest-room type ends here -->
+
+              <h2>Preferences</h2>
+
+              <div id="preferences">
+                <input type="checkbox" name="service-animal" value="Animal" /> Travelling
+                with a service animal<br />
+                <br />
+                <input type="checkbox" name="smoking" value="Smoking" /> I need to
+                specify a smoking room
+              </div><!--preferences div ends here-->
+
+              <h2>Special Requests</h2>
+              <textarea rows="4" cols="40" id="special-requests">
+              </textarea><span id="special-requests-error"></span>
+            </div>
+          </form>
+        </div>
+       <form action="success.html" method="post">
+       <div id="conference">
+          <div id="conference-text1">
+          <h2>Conference Requests</h2>
+           <p>Please indicate your requirements for multimedia support, or other specialist equipment in the Conference Requests text box.</p>
+              <div id="con-title">
+                <label for="con-guest-title">*Title:</label> <select name="con-guest-title" id=
+                "con-guest-title" size="1">
+                  <option value="0">
+                    Please select
+                  </option>
+
+                  <option value="Mr">
+                    Mr
+                  </option>
+
+                  <option value="Mrs">
+                    Mrs
+                  </option>
+
+                  <option value="Miss">
+                    Miss
+                  </option>
+
+                  <option value="Ms">
+                    Ms
+                  </option>
+
+                  <option value="Dr">
+                    Dr
+                  </option>
+
+                  <option value="Other">
+                    Other
+                  </option>
+                </select> <span id="con-guest-title-error"></span>
+              </div><!-- div for title ends here -->
+
+              <div id="con-guest-fname">
+                <label for="con-guest-first-name">*First Name:</label><input type="text" name=
+                "con-guest-first-name" size="22" id="con-guest-first-name" /> <span id=
+                "con-guest-fname-error"></span>
+              </div><!-- div for guest-fname ends here-->
+
+              <div id="con-guest-lname">
+                <label for="con-guest-last-name">*Last Name:</label><input type="text" name=
+                "con-guest-last-name" size="22" id="con-guest-last-name" /> <span id=
+                "con-guest-lname-error"></span>
+              </div><!-- div for guest-lname ends here -->
+
+              <h2>Contact Information</h2>
+
+              <div id="con-guest-phone">
+                <label for="con-guest-telephone">*Phone:</label><input type="text" name=
+                "con-guest-telephone" size="22" id="con-guest-telephone" /> <span id=
+                "con-guest-phone-error"></span>
+              </div><!-- div for guest-phone ends here-->
+
+              <div id="con-guest-e-address">
+                <label for="con-guest-email-address">*Email:</label> <input type="text" name=
+                "con-guest-email-address" size="27" id="con-guest-email-address" /> <span id=
+                "con-guest-e-address-error"></span>
+              </div><!--div for guest-e-address ends here -->
+
+              <div id="con-guest-address-type">
+                <label for="con-guest-add-type">Address Type:</label> <select name=
+                "con-guest-add-type" id="con-guest-add-type" size="1">
+                  <option value="0">
+                    Select address type
+                  </option>
+
+                  <option value="Business">
+                    Business
+                  </option>
+
+                  <option value="Home">
+                    Home
+                  </option>
+
+                  <option value="Other">
+                    Other
+                  </option>
+                </select> <span id="con-guest-address-type-error"></span>
+              </div><!-- div for guest-address-type ends here -->
+
+              <div id="con-guest-paddress">
+                <label for="con-guest-phys-address">Address:</label> <input type="text" name=
+                "con-guest-phys-address" size="22" id="con-guest-phys-address" /> <span id=
+                "con-guest-paddress-error"></span>
+              </div><!-- div for guest-paddress ends here -->
+
+              <div id="con-guest-paddress2">
+                <label for="con-guest-phys-address2">Address 2:</label>
+                <input type="text" name="con-guest-phys-address2" size="22" id=
+                "con-guest-phys-address2" /> <span id="con-guest-paddress2-error"></span>
+              </div><!-- div for guest-paddress ends here -->
+
+              <div id="con-guest-city">
+                <label for="con-guest-from-city">City:</label> <input type="text" name=
+                "con-guest-from-city" size="22" id="con-guest-from-city" /> <span id=
+                "con-guest-city-error"></span>
+              </div><!--div for guest-city ends here-->
+
+              <div id="con-guest-country">
+                <label for="con-guest-from-country">Country:</label> <input type="text" name=
+                "con-guest-from-country" size="22" id="con-guest-from-country" /> <span id=
+                "con-guest-country-error"></span>
+              </div><!--div for guest-country ends here-->
+
+              <div id="con-guest-postcode">
+                <label for="con-guest-postcode-no">Postcode:</label> <input type="text" name=
+                "con-guest-postcode-no" size="22" id="con-guest-postcode-no" /> <span id=
+                "con-guest-postcode-error"></span>
+              </div><!--div for guest-postcode ends here-->
+
+              <div id="con-guest-submit">
+                <input type="submit" value="BOOK NOW!" id="submit-button2"/>
+              </div><!--ends the con-guest-submit div-->
+            </div><!--conference text1 ends here-->
+
+            <div id="conference-text2">
+              <div id="con-guest-destination">
+                <label for="con-guest-destination-to">*Venue:</label> <select name=
+                "con-guest-destination-to" id="con-guest-destination-to" size="1">
+                  <option value="0">
+                    Choose venue
+                  </option>
+
+                  <optgroup label="ASIA PACIFIC">
+                    <option value="HongKong">
+                      Hong Kong
+                    </option>
+
+                    <option value="Japan">
+                      Japan
+                    </option>
+
+                    <option value="Singapore">
+                      Singapore
+                    </option>
+
+                    <option value="Thailand">
+                      Thailand
+                    </option>
+
+                    <option value="Beijing">
+                      Beijing
+                    </option>
+                  </optgroup>
+
+                  <optgroup label="EUROPE">
+                    <option value="France">
+                      France
+                    </option>
+
+                    <option value="UnitedKingdom">
+                      United Kingdom
+                    </option>
+
+                    <option value="Austria">
+                      Austria
+                    </option>
+
+                    <option value="Barcelona">
+                      Barcelona
+                    </option>
+
+                    <option value="Belgium">
+                      Belgium
+                    </option>
+
+                    <option value="Denmark">
+                      Denmark
+                    </option>
+
+                    <option value="Finland">
+                      Finland
+                    </option>
+
+                    <option value="Germany">
+                      Germany
+                    </option>
+
+                    <option value="Ireland">
+                      Ireland
+                    </option>
+
+                    <option value="Italy">
+                      Italy
+                    </option>
+
+                    <option value="Madrid">
+                      Madrid
+                    </option>
+
+                    <option value="Netherlands">
+                      Netherlands
+                    </option>
+
+                    <option value="Norway">
+                      Norway
+                    </option>
+
+                    <option value="Portugal">
+                      Portugal
+                    </option>
+
+                    <option value="Sweden">
+                      Sweden
+                    </option>
+
+                    <option value="Switzerland">
+                      Switzerland
+                    </option>
+                  </optgroup>
+
+                  <optgroup label="OCEANIA">
+                    <option value="Australia">
+                      Australia
+                    </option>
+
+                    <option value="NewZealand">
+                      New Zealand
+                    </option>
+                  </optgroup>
+
+                  <optgroup label="NORTH AMERICA">
+                    <option value="Canada">
+                      Canada
+                    </option>
+
+                    <option value="PuertoRico">
+                      Puerto Rico
+                    </option>
+
+                    <option value="USA">
+                      USA
+                    </option>
+
+                    <option value="USVirginIslands">
+                      US Virgin Islands
+                    </option>
+                  </optgroup>
+
+                  <optgroup label="SOUTH AMERICA">
+                    <option value="Brazil">
+                      Brazil
+                    </option>
+
+                    <option value="Chile">
+                      Chile
+                    </option>
+
+                    <option value="Colombia">
+                      Colombia
+                    </option>
+
+                    <option value="Mexico">
+                      Mexico
+                    </option>
+
+                    <option value="Venezuela">
+                      Venezuela
+                    </option>
+                  </optgroup>
+                </select> <span id="con-guest-destination-error"></span>
+              </div><!--conference guest-destination div ends here-->
+
+
+              <div id="requirements">
+                <div id="accom">
+                <label for="con-guest-accom">Accommodation required:</label> <select name=
+                "con-guest-add-type" id="con-guest-accom" size="1">
+                  <option value="0">
+                  Please select
+                  </option>
+
+                  <option value="Required">
+                    Required
+                  </option>
+
+                  <option value="Not Required">
+                    Not Required
+                  </option>
+
+                </select> <span id="accom-req-error"></span>
+                </div>
+                <div id="attending">
+                  <label for="no-attendees">Number of attendees:</label> 
+                  <input type="text" name="no-attendees" size="5" id="no-attendees" />
+                   <span id="no-attendees-error"></span>
+              </div>
+              </div><!--preferences div ends here-->
+                <div id="con-guest-calendars">
+                <div id="con-guest-arrive-calendar">
+                  <label for="con-guest-arrive">*Arrive:</label><input type="text" name="con-guest-arrive"
+                  size="22" id="con-guest-arrive" /> <span id=
+                  "con-guest-arrive-calendar-error"></span>
+                </div><!--calendar arrive div ends-->
+
+                <div id="con-guest-depart-calendar">
+                  <label for="con-guest-depart">*Depart:</label><input type="text" name="con-guest-depart"
+                  size="22" id="con-guest-depart" /> <span id=
+                  "con-guest-depart-calendar-error"></span>
+                </div><!--guest-depart calendar div ends-->
+              </div><!--calendars div ends here-->
+              <div id="conference-requests">
+              <h2>*Conference Requests</h2>
+              <textarea rows="4" cols="40" id="con-requests">
+              </textarea><span id="con-requests-error"></span>
+          
+            </div> <!--conference requests div ends here-->
+               <p>An electronic receipt will be sent to the address of record when you check out.</p></div> <!--conference text 2 ends here-->
+   
+      </div>   
+    </form><!--conference ends here -->
+      </div>
+
+
+    </div>
+
+    <div class="footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="dining.html">Dining</a></li>
+
+        <li>
+          <a href="rooms.html">Rooms</a>
+
+          <ul>
+            <li><a href="standard.html">Standard</a></li>
+
+            <li><a href="superior.html">Superior</a></li>
+
+            <li><a href="penthouse.html">Penthouse</a></li>
+          </ul>
+        </li>
+
+        <li><a href="facilities.html">Facilities</a></li>
+
+        <li><a href="gallery.html">Gallery</a></li>
+
+        <li><a href="contact_us.html">Contact</a></li>
+
+        <li><a href="online_reservation.html">Online Reservations</a></li>
+
+        <li><a href="sitemap.html">Sitemap</a></li>
+
+        <li class="bullet-twitter"><a href="https://twitter.com/"><img src="img/twitter.png" alt="twitter-link" /></a></li>
+
+        <li class="bullet-facebook"><a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook-link" /></a></li>
+      </ul>
+
+      <p>&copy; The Savoy Hotel Group 2014</p>
+    </div><!--footer div ends here-->
+    
+ 
+  </div><!--wrapper ends here-->
+  <script src="js/reusable-form-validator-functions.js" type="text/javascript"></script>
+  <script src="js/main-form-validation.js" type="text/javascript"></script>
+  <script src="js/conference-form-validation.js" type="text/javascript"></script>
+</body>
+</html>

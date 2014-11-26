@@ -1,0 +1,11 @@
+@font-face {
+	src:url(../include/eurof55.eot);
+	font-family: Eurofurence;
+}
+
+
+#nav ul li + li + li + li + li + li + li{
+	margin-right: 6px;
+	background-color: rgb(149,208,171);
+	margin-left: 10px;
+}
